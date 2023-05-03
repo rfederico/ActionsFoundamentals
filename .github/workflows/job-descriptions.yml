@@ -10,7 +10,7 @@ jobs:
   simple_summary:
     strategy:
       matrix:
-        environment_to_deploy: [ test, demo_amadeus]
+        environment_to_deploy: [ test, Production]
     environment: ${{ matrix.environment_to_deploy }}
     runs-on: ubuntu-latest
     steps:
